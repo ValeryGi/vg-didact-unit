@@ -1,0 +1,28 @@
+# External Services
+server:
+    port: ${SERVER_PORT:8087}
+
+# spring boot configurations
+spring:
+    application:
+        name: vg-ms-didactic-unit
+    data:
+        mongodb:
+          uri: mongodb+srv://gabrielgutierrezq:3mbmCx8Gx6hrRKHY@as221s5prs2.1e7z9.mongodb.net/AS221S5PRS2?retryWrites=true&w=majority&appName=AS221S5PRS2
+# Empoit de actuator  
+api:
+   version: api/v1
+
+# Swagger
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api/staff
+
+# External services
+services:
+    study-program:
+        url: ${STUDY_PROGRAMME_SERVICE_URL:https://active-sabra-vallegrande-e443c570.koyeb.app/common/api/v1/study-program}
+
+#Demo Slack Integración
