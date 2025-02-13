@@ -16,7 +16,6 @@ import reactor.core.publisher.Mono;
 
 @Slf4j
 @RestController
-@CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT})
 @RequestMapping("/common/${api.version}/didactic-unit")
 public class DidacticUnitController {
 
